@@ -1,0 +1,153 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.Conteneur{
+    height: auto;
+    width: 100%;
+    margin: 10px;
+}
+
+header a{
+    text-decoration: dashed;
+    color: #202124;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+}
+.Lien{
+    display: flex;
+    margin-left: 80%;
+    gap: 10px;
+}
+
+.Gmail:hover{
+    background-color:  #c1c6c8;
+    border-radius: 5px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.Google{
+    display: flex;
+    font-size: 120px;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+}
+.Google p{
+    margin: 0;
+}
+.Bleu{
+    color: #4A91F4;
+}
+.Rouge{
+    color: #ED4C3C;
+}
+.Jaune{
+    color: #FBC505;
+}
+.Vert{
+    color: #3AB25D;
+}
+input{
+    height: 40px;
+    width: 700px;
+    border-radius: 16px;
+    font-size: 25px;
+}
+.Boutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+button{
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+ 
+    cursor: pointer;
+}
+button:hover{
+    background-color: #f1f3f4;
+    color: #3AB25D;
+    box-shadow: 1px 1px 5px 2px #888;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+     
+}
+footer p{
+    margin: 0;
+    color: #202124;
+    margin-bottom: 2px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 15px;
+}
+ul :first-child{
+    list-style: none;
+}
+@media (max-width:768px) {
+   .Lien{
+        margin-left: 40%;
+    }
+    input{
+        width: 500px;
+        height: 50px;
+    }
+    .Google{
+        font-size: 100px;
+    }
+    .Boutton{
+       margin-top: -15px;
+    }
+}
+@media (max-width: 425px) {
+    .Google{
+        font-size: 60px;
+    }
+    input{
+        width: 350px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .Conteneur{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer{
+       margin-right: 30px;
+    }
+    .Lien{
+        margin-left: 35%;
+    }
+}
+
+@media (max-width: 375px) {
+     .Google{
+        font-size: 50px;
+    }
+    input{
+        width: 300px;
+        height: 40px;
+    }
+}
