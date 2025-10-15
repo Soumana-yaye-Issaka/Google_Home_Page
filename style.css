@@ -2,6 +2,7 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
 }
 .Conteneur{
     height: auto;
@@ -39,7 +40,7 @@ main{
     display: flex;
     font-size: 120px;
     gap: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-weight: 800;
 }
 .Google p{
@@ -62,6 +63,9 @@ input{
     width: 700px;
     border-radius: 16px;
     font-size: 25px;
+    padding: 10px;
+    outline-color: #4A91F4;
+    border: solid;
 }
 .Boutton{
     display: flex;
@@ -74,7 +78,6 @@ button{
     border-radius: 10px;
     border: none;
     padding: 5px;
- 
     cursor: pointer;
 }
 button:hover{
@@ -112,6 +115,7 @@ ul :first-child{
     input{
         width: 500px;
         height: 50px;
+        
     }
     .Google{
         font-size: 100px;
