@@ -1,33 +1,43 @@
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    overflow: hidden;
 }
-.Conteneur{
+
+.Conteneur {
     height: auto;
     width: 100%;
     margin: 10px;
 }
 
-header a{
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+}
+
+header a {
     text-decoration: none;
     color: #202124;
     padding: 5px;
     display: flex;
-    text-align: center;
+    text-align: end;
 }
-.Lien{
+
+.Lien {
     display: flex;
-    margin-left: 80%;
     gap: 10px;
 }
 
-.Gmail:hover{
-    background-color:  #c1c6c8;
+.Gmail:hover {
+    background-color: #c1c6c8;
     border-radius: 5px;
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,30 +46,36 @@ main{
     margin-top: 20px;
 }
 
-.Google{
+.Google {
     display: flex;
     font-size: 120px;
     gap: 10px;
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-weight: 800;
 }
-.Google p{
+
+.Google p {
     margin: 0;
 }
-.Bleu{
+
+.Bleu {
     color: #4A91F4;
 }
-.Rouge{
+
+.Rouge {
     color: #ED4C3C;
 }
-.Jaune{
+
+.Jaune {
     color: #FBC505;
 }
-.Vert{
+
+.Vert {
     color: #3AB25D;
 }
-input{
-    height: 40px;
+
+input {
+    height: 50px;
     width: 700px;
     border-radius: 16px;
     font-size: 25px;
@@ -67,90 +83,110 @@ input{
     outline-color: #4A91F4;
     border: solid;
 }
-.Boutton{
+
+.Boutton {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-top: 10px;
 }
-button{
+
+button {
     border-radius: 10px;
     border: none;
     padding: 5px;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: #f1f3f4;
     color: #3AB25D;
     box-shadow: 1px 1px 5px 2px #888;
 }
-footer{
+
+footer {
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     margin-top: 20px;
-     
+
 }
-footer p{
+
+footer p {
     margin: 0;
     color: #202124;
     margin-bottom: 2px;
 }
-footer ul{
+
+footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     gap: 15px;
 }
-ul :first-child{
+
+ul :first-child {
     list-style: none;
 }
+
 @media (max-width:768px) {
-   .Lien{
-        margin-left: 40%;
-    }
-    input{
+    
+    input {
         width: 500px;
         height: 50px;
-        
+
     }
-    .Google{
+
+    .Google {
         font-size: 100px;
     }
-    .Boutton{
-       margin-top: -15px;
+
+    .Boutton {
+        margin-top: -15px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
+
 @media (max-width: 425px) {
-    .Google{
+    .Google {
         font-size: 60px;
     }
-    input{
+
+    input {
         width: 350px;
         height: 50px;
         font-size: 20px;
     }
-    .Conteneur{
+
+    .Conteneur {
         width: 100%;
         align-items: center;
         flex-direction: column;
     }
-    footer{
-       margin-right: 30px;
+
+    footer {
+        margin-right: 30px;
     }
-    .Lien{
+
+    .Lien {
         margin-left: 35%;
     }
 }
 
 @media (max-width: 375px) {
-     .Google{
+    .Google {
         font-size: 50px;
     }
-    input{
+
+    input {
         width: 300px;
         height: 40px;
     }
